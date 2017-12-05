@@ -17,5 +17,34 @@ Rails.application.routes.draw do
 
   get 'home/showproduct'
 
+
+  # 联系我们
+  get 'contact/index'
+
+
+
+  #企业新闻
+  get 'news/index'
+  get 'news/industry_news'
+
+
+
+  # 关于我们
+  get 'about/index'
+  get 'about/culture'
+  get 'about/big_event'
+  get 'about/framework'
+  get 'about/video'
+
+  # 数字时代
+  get 'digital/index'
+  
+  # 御易健
+  get 'yyj/index'
+
+
+  # 健康计划
+  get 'health/index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

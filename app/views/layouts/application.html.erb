@@ -5,10 +5,14 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     
   </head>
 
   <body>
+  	<!-- 引入头部导航视图 -->
+	<%= render "layouts/head" %>
+
     <%= yield %>
     <div class="ecofootbg">
 
@@ -183,6 +187,6 @@
 
 <button type="button" class="btn btn-icon btn-primary btn-squared met-scroll-top hide"><i class="icon wb-chevron-up" aria-hidden="true"></i></button>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
   </body>
 </html>
