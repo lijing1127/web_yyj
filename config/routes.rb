@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'home/showproduct'
 
+  # get 'home/digital'
+
 
   # 联系我们
   get 'contact/index'
@@ -38,6 +40,12 @@ Rails.application.routes.draw do
 
   # 数字时代
   get 'digital/index'
+  get 'digital/healMana'
+  get 'digital/capital'
+  get 'digital/manaServ'
+  get 'digital/senior'
+  get 'digital/strategic'
+  get 'digital/product'
   
   # 御易健
   get 'yyj/index'
