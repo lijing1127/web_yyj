@@ -1,2 +1,74 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<!--[if lt IE 10]>
+<script src="js/media.match.min.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/classlist.min.js"></script>
+<![endif]-->
+<style type="text/css" media="screen">
+	.pageTitle h3{
+		text-align: center;
+	}
+	.pageTitle p{
+		text-align: center;
+		color:#999;
+	}
+	.newsImage {
+		width:350px;
+		height:200px;
+	}
+	.newsList {
+		width:90%;
+		margin:0 auto;
+	}
+</style>
+</head>
 
-<h1>行业动态</h1>
+	<body class="met-navfixed">
+	<!--[if lte IE 8]>
+		<div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
+		<p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
+		</div>
+	<![endif]-->
+
+		<section class="met-news animsition">
+			<div class="container">
+				<div class="pageTitle">
+					<h3>行业动态</h3>
+					<p>ENTERPRISE NEWS</p>
+				</div>
+				<div class="">
+					<div class="met-news-body">
+						<div class="newsList">
+							<div class="met-news-list">
+								<ul class="met-page-ajax">
+									<% @trends.each do |t| %>
+                                    <li>
+                                        <h4>
+                                            <a href="shownews.html" target='_self'>
+                                            <%= t.title %>
+                                            </a>
+                                        </h4>
+                                        <%= image_tag t.image.url, class:'newsImage' %>
+                                        <p class="des"><%= t.simple_desc %>...</p>
+                                        <p class="info">
+                                            <span><%= t.created_at.to_s[0..9] %></span>
+                                            <span class="margin-left-10">admin</span>
+                                        </p>
+                                    </li>
+                                    <% end %>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</body>
+</html>
