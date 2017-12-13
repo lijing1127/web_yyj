@@ -32,6 +32,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise'
+gem 'activeadmin', '~> 1.0.0.pre4'
+gem 'carrierwave', '~> 0.11.2'
+gem 'ckeditor', '~> 4.2.4'
+gem 'paperclip', '~> 3.0'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
