@@ -1,3 +1,49 @@
+<style type="text/css" media="screen">
+
+	.outDiv {
+		margin-top:2%;
+		margin-bottom:2%;
+	}	
+
+	.pageTitle h3{
+		text-align: center;
+	}
+	.pageTitle p{
+		text-align: center;
+		color:#999;
+	}	
+
+	.links{
+		text-align: center;
+		line-height: 5;
+	}
+	.links a{
+		color:#000;
+	}
+
+	.cultureImg {
+		position: absolute;
+		left: 50%;
+		margin-left: -320px;
+	}
+
+</style>
 
 
-<h1>宣传片</h1>
+<div class="container outDiv">
+	<div class="links">
+		<a href="../about/index" title="公司简介">公司简介</a><span>/</span>
+		<a href="../about/culture" title="企业文化">企业文化</a><span>/</span>
+		<a href="../about/big_event" title="企业大事件">企业大事件</a><span>/</span>
+		<a href="../about/framework"  title="组织架构">组织架构</a><span>/</span>
+		<a href="../about/video"  title="宣传片">宣传片</a>	
+	</div>
+	<div class="pageTitle">
+		<h3>宣传片</h3>
+		<p>TRAILER</p>
+		
+		<div style="width: 100%;position: relative;height:750px;">
+			<%= video_tag "ybyt8MB.mp4" ,:controls => true ,class: "cultureImg"%>
+		</div>		
+	</div>
+</div>
