@@ -8,7 +8,7 @@
 <!--[if lt IE 10]>
 <script src="js/media.match.min.js"></script>
 <script src="js/respond.min.js"></script>
-<script src="js/classlist.min.js"></script> 
+<script src="js/classlist.min.js"></script>
 <![endif]-->
 <style type="text/css" media="screen">
 	.pageTitle h3{
@@ -18,7 +18,7 @@
 		text-align: center;
 		color:#999;
 	}
-	.newsImage {		
+	.newsImage {
 		width:350px;
 		height:200px;
 	}
@@ -35,31 +35,33 @@
 		<p class="browserupgrade font-size-18">你正在使用一个<strong>过时</strong>的浏览器。请<a href="http://browsehappy.com/" target="_blank">升级您的浏览器</a>，以提高您的体验。</p>
 		</div>
 	<![endif]-->
-		
+
 		<section class="met-news animsition">
 			<div class="container">
 				<div class="pageTitle">
 					<h3>企业新闻</h3>
 					<p>ENTERPRISE NEWS</p>
-				</div>	
+				</div>
 				<div class="">
 					<div class="met-news-body">
 						<div class="newsList">
 							<div class="met-news-list">
 								<ul class="met-page-ajax">
-									<li>
-										<h4>
-											<a href="shownews.html" title="低碳建筑首选天然石材 环保健康受欢迎" target='_self'>
-											低碳建筑首选天然石材 环保健康受欢迎
-											</a>
-										</h4>
-										<%= image_tag "yyj_banner.jpg",class:'newsImage' %>
-										<p class="des">所谓低碳经济，是指在可持续发展理念指导下，通过技术创新、制度创新、产业转型等多种手段，尽可能地减少煤炭石油等高碳能源消耗，减少排放，达到经济社会发展与生态环境保护双赢的一种经济发展形态。尽可能地减少煤炭石油等高碳能源消耗，减少排放，达到经济社会发展与生态环境保护双赢的一种经济发展形态。...</p>
-										<p class="info">
-											<span>2016-09-17</span>
-											<span class="margin-left-10">admin</span>
-										</p>
-									</li>
+									<% @news.each do |t| %>
+                                    <li>
+                                        <h4>
+                                            <a href="shownews.html" target='_self'>
+                                            <%= t.title %>
+                                            </a>
+                                        </h4>
+                                        <%= image_tag t.image.url, class:'newsImage' %>
+                                        <p class="des"><%= t.simple_desc %>...</p>
+                                        <p class="info">
+                                            <span><%= t.created_at.to_s[0..9] %></span>
+                                            <span class="margin-left-10">admin</span>
+                                        </p>
+                                    </li>
+                                    <% end %>
 								</ul>
 							</div>
 						</div>
