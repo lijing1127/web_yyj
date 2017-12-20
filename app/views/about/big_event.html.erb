@@ -2,7 +2,7 @@
 
 	.outDiv {
 		margin-top:2%;
-		margin-bottom:2%;
+		margin-bottom:6%;
 	}	
 
 	.pageTitle h3{
@@ -18,14 +18,18 @@
 		line-height: 5;
 	}
 	.links a{
-		color:#000;
+		color:#000!important;
+		text-decoration: none!important;
+	}
+	.iframe-wrap{
+		
 	}
 
 </style>
 
 
-<%= javascript_include_tag "application"%>
-
+<%= stylesheet_link_tag "application", media: "all" %>
+<%= javascript_include_tag "application" %>
 <div class="container outDiv">
 	<div class="links">
 		<a href="../about/index" title="公司简介">公司简介</a><span>/</span>
@@ -39,21 +43,46 @@
 		<p>BIG BUSINESS EVENTS</p>
 	</div>
 	<div id="iframe-wrap">
-	<section id="iframe" frameborder="0" width="100%" height="896px">
-		
+		<section id="iframe" frameborder="0" width="100%" height="896px">	
 
-	<div class="w1000">
-		
-		<h1 class="header">点滴努力大事件</h1>
-
-		<div class="event_wrap clearfix">
-			<div class="middle_line"><i class="first"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="last"></i><i class="first"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="last"></i></div>			
-		<div class="list_left list"><span class="big_squre"><i>2015</i></span><div class="ev_text ev_text_event ev_t2 aActiveWid"><span class="small_squire"><i></i></span><span class="small_line"></span><h3>2015年2月29</h3><p>米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小</p></div><div class="ev_text_odd ev_text ev_t4 aActiveWid"><span class="small_squire"><i></i></span><span class="small_line"></span><h3>2015年4月3</h3><p>米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小</p></div><div class="ev_text ev_text_event ev_t10 aActiveWid"><span class="small_squire"><i></i></span><span class="small_line"></span><h3>2015年10月11日</h3><p>米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小</p></div></div><div class="list_right list"><span class="big_squre"><i>2016</i></span><div class="ev_text ev_text_event ev_t2 aActiveWid"><span class="small_squire"><i></i></span><span class="small_line"></span><h3>2016年2月18</h3><p>米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小</p></div><div class="ev_text_odd ev_text ev_t4 aActiveWid"><span class="small_squire"><i></i></span><span class="small_line"></span><h3>2016年4月15</h3><p>米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小</p></div></div></div>
-
-		</div>
-
-	</section>
-</div>
+			<div class="w1000">
+				<div class="event_wrap clearfix">
+					<div class="middle_line">
+						<i class="first"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="last"></i><i class="first"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="last"></i>
+					</div>
+					<div class="list_left list">
+						<span class="big_squre"><i>2017</i></span>
+						<div class="ev_text ev_text_event ev_t2 aActiveWid">
+							<span class="small_squire"><i></i></span><span class="small_line"></span>
+							<h3>2017-6-11</h3>
+							<p>北京有庆御通医疗投资有限公司与北京家园共育教育科技中心达成明确深度合作意向</p>
+						</div>
+						<div class="ev_text_odd ev_text ev_t4 aActiveWid">
+							<span class="small_squire"><i></i></span><span class="small_line"></span>
+							<h3>2017-5-18</h3>
+							<p>北京有庆御通医疗投资有限公司与LWKS醒眠之钥遗失症候群国际救援团队在北京市王府井大街黄图岗胡同38号御邦·健康同桌A1号馆举行签约仪式，并达成长期战略合作伙伴关系。</p>
+						</div>
+						<div class="ev_text ev_text_event ev_t6 aActiveWid">
+							<span class="small_squire"><i></i></span><span class="small_line"></span>
+							<h3>2017-5-13</h3>
+							<p>有庆御通（中国）商业体系参与联合承办“第二届中国辣妈创业高峰论坛”</p>
+						</div>
+						<br/>
+						<div class="ev_text_odd ev_text ev_t8 aActiveWid">
+							<span class="small_squire"><i></i></span><span class="small_line"></span>
+							<h3>2017-4-20</h3>
+							<p>御邦医通工作场所健康促进在农行新疆分行营业部正式成立“御邦医通健康促进站”</p>
+						</div>
+						<div class="ev_text ev_text_event ev_t10 aActiveWid">
+							<span class="small_squire"><i></i></span><span class="small_line"></span>
+							<h3>2017-4-9</h3>
+							<p>中数信安联盟与有庆御通（中国）商业体系内北京有庆御通医疗投资有限公司签订战略合作协议，并授权“有庆体系”以御邦医通商业模式为专业支撑，成立中数信安联盟健康管理服务专业委员会</p>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+	</div>
 </div>
 
 
@@ -113,49 +142,85 @@ $(document).ready(function () {
 
 
 <script type="text/javascript">
-function Responsive($a) {
-	if ($a == true) $("#Device").css("opacity", "100");
-	if ($a == false) $("#Device").css("opacity", "0");
-	$('#iframe-wrap').removeClass().addClass('full-width');
-	$('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
-	$(this).addClass('active');
-	return false;
-};
+	function Responsive($a) {
+		if ($a == true) $("#Device").css("opacity", "100");
+		if ($a == false) $("#Device").css("opacity", "0");
+		$('#iframe-wrap').removeClass().addClass('full-width');
+		$('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	};
 </script>
 
 
 <script type="text/javascript">
 	$(function(){
-		var bigEvent =[{
-		'year' : 2015,
-		'events' :[
+		var bigEvent =[
 		{
-			'mouths' : 2,
-			'times' :'2015年2月29',
-			'even' :'米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小'
-		},{
-			'mouths' : 4,
-			'times' :'2015年4月3',
-			'even' :'米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小'
-		},{
-			'mouths' : 10,
-			'times' :'2015年10月11日',
-			'even' :'米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小'
-		}]
-	},{
 		'year' : 2016,
 		'events' :[
 		{
 			'mouths' : 2,
-			'times' :'2016年2月18',
-			'even' :'米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小'
+			'times' :'2016-9-2',
+			'even' :'我司与峨眉印象房产地产开发有限公司达成项目合作协议'
 		},{
 			'mouths' : 4,
-			'times' :'2016年4月15',
-			'even' :'米校园创业团队正式成立，确定以“个性化定制”为核心的校园综合服务团队，覆盖20多所大学，成为小'
+			'times' :'2016-8-2',
+			'even' :'我司与北京祥颐共生养老投资有限公司达成项目合作协议'
+		},{
+			'mouths' : 6,
+			'times' :'2016-7-19',
+			'even' :'我司与中国人民健康保险股份有限公司新疆分公司战略合作签署协议'
+		},
+		{
+			'mouths' : 8,
+			'times' :'2016-6-27',
+			'even' :'我司与播州区中医院战略合作签署协议'
+		},
+		{
+			'mouths' : 10,
+			'times' :'2016-5-29',
+			'even' :'有庆御通（中国）商业体系与中国将军网战略合作签约仪式'
+		},{
+			'mouths' : 12,
+			'times' :'2016-4-29',
+			'even' :'美国慢病健康管理国际联盟中国区代表处揭牌仪式'
+		}
+		]
+	},{
+		'year' : 2015,
+		'events' :[
+		{
+			'mouths' : 6,
+			'times' :'2015-1-12－2015-1-14',
+			'even' :'召开《一个模式和一群人的梦－中国•御邦医通发展研讨会》，中国•御邦医通商业模式正式开始推广。'
+		}]
+	},{
+		'year' : 2014,
+		'events' :[
+		{
+			'mouths' : 2,
+			'times' :'2014-9-30',
+			'even' :'首个T-SPD平台项目－新疆伊犁州新源县T-SPD平台项目正式签约，并开始搭建、运营。'
+		},{
+			'mouths' : 4,
+			'times' :'2014-8-8',
+			'even' :'深圳御邦医通数字化健康服务有限公司正式挂牌成立。开始推广、经营T-SPD平台项目、并开始逐渐完善中国•御邦医通商业模式。'
+		},{
+			'mouths' : 6,
+			'times' :'2014-7-23',
+			'even' :'北京有庆御通医疗投资有限公司正式挂牌成立，并决定成立控股子公司深圳御邦医通数字化健康服务有限公司，作为T-SPD平台项目的经营主体。'
+		},
+		{
+			'mouths' : 8,
+			'times' :'2014-7-13',
+			'even' :'初创团队决定发起成立北京有庆御通医疗投资有限公司，运营T-SPD平台项目。'
 		}
 		]}];
 		$('.event_wrap').eventFlow({'events':bigEvent});
 	})
 
 </script>
+
+
+
